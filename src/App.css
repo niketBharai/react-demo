@@ -121,3 +121,19 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
+@media (max-width: 768px) {
+  .w-background-video {
+    height: 500px;
+    width: 100%;
+
+    video {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .w-background-img {
+    height: auto;
+  }
+}

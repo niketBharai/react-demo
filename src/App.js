@@ -1,12 +1,12 @@
-import React from "react";
+import React, { Suspense, lazy } from "react";
 import "./App.css";
-import Landing from "./components/Landing";
+const Landing = lazy(() => import("./components/Landing"));
 
 const App = () => {
   return (
-    <>
+    <Suspense fallback={<div>Loading...</div>}>
       <Landing />
-    </>
+    </Suspense>
   );
 };
 
